@@ -1,0 +1,25 @@
+/* VARIABLES */
+
+/* radius */
+$default-radius: 1.5rem;
+$radius-small: 0.5rem;
+
+/* colors */
+:root {
+    /* black & white*/
+    --color-white: #fff;
+    --color-black: #000;
+
+    /* accent colors */
+    --color-accent-1: #e8ce75;
+    --color-accent-2: #59c5c7;
+
+    /* bg colors */
+    --color-bg-primary: #f5f6f8;
+
+    /* text colors */
+    --color-txt-primary: #333333;
+    --color-txt-secondary: #484848;
+    --color-txt-tertiary: #999999;
+    --color-txt-quaternary: #aaaaaa;
+}

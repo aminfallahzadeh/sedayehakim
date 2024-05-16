@@ -1,4 +1,3 @@
-
 // abstracts imports
 @import "abstracts/variables";
 @import "abstracts/functions";
@@ -12,14 +11,21 @@
 
 // components imports
 @import "components/btn";
-@import "components/header";
+@import "components/nav";
+@import "components/footer";
+@import "components/search";
+@import "components/icon-card";
 
-// layouts imports
-@import "layouts/footer";
-@import "layouts/header";
+// layout imports
+@import "layouts/grid";
+@import "layouts/flex";
 
 // pages imports
 @import "pages/home";
+
+// sections improts
+@import "sections/hero";
+@import "sections/courses";
 
 // themes imports
 

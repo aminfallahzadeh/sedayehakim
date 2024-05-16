@@ -1,0 +1,22 @@
+@font-face {
+    font-family: sahel;
+    src:
+        url("../fonts/Vazir.eot") format("embedded-opentype"),
+        url("../fonts/Vazi.ttf") format("truetype"),
+        url("../fonts/Vazir.woff") format("woff"),
+        url("../fonts/Vazir.woff2") format("woff2");
+}
+
+body {
+    font-family: Vazir, sans-serif !important;
+}
+
+html {
+    font-family: Vazir, sans-serif !important;
+}
+
+.heading-primary {
+    font-size: 6.6rem;
+    font-weight: 100;
+    color: var(--color-txt-primary);
+}

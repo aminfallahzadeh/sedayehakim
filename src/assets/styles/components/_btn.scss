@@ -1,0 +1,60 @@
+.btn {
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+
+    &-secondary {
+        padding: 0.8rem 1.2rem;
+        color: var(--color-accent-2);
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        border: 2px solid var(--color-accent-2);
+
+        &:hover {
+            background-color: var(--color-accent-2);
+            color: var(--color-white);
+
+            svg {
+                path,
+                span {
+                    transition: all 0.3s;
+                    fill: var(--color-white);
+                }
+            }
+        }
+    }
+
+    &-tertiary {
+        background-color: var(--color-accent-1);
+        font-size: 1.6rem;
+        border-radius: 1.2rem;
+        border: 2px solid transparent;
+        padding: 0.8rem 0.8rem;
+
+        &:hover {
+            background-color: var(--color-white);
+            color: var(--color-accent-1);
+            border: 2px solid var(--color-accent-1);
+
+            svg {
+                path,
+                span {
+                    transition: all 0.3s;
+                    fill: var(--color-accent-1);
+                }
+            }
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__icon {
+        transition: fill 0.3s;
+    }
+}
