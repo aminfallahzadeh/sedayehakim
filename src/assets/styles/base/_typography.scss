@@ -20,3 +20,30 @@ html {
     font-weight: 100;
     color: var(--color-txt-primary);
 }
+
+.heading-secondary {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-txt-primary);
+}
+
+.title-secondary {
+    position: relative;
+    line-height: 3.2rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: -1rem;
+        width: 0.5rem;
+        border-radius: 2rem;
+        height: 100%;
+        background-color: var(--color-accent-1);
+    }
+
+    &__caption {
+        font-size: 1.6rem;
+        font-weight: 100;
+        color: var(--color-txt-tertiary);
+    }
+}

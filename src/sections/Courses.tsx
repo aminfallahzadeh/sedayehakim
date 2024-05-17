@@ -1,6 +1,15 @@
 // components
 import SearchPrimary from "../components/SearchPrimary";
 import IconCard from "../components/IconCard";
+import Button from "../components/Button";
+import TitleSecondary from "../components/TitleSecondary";
+
+// mui imports
+import {
+  Add as AddIcon,
+  ArrowBackIos as ArrowLeftIcon,
+  ArrowForwardIos as ArrowRightIcon,
+} from "@mui/icons-material";
 
 function Courses(): JSX.Element {
   const content = (
@@ -10,7 +19,22 @@ function Courses(): JSX.Element {
       </div>
 
       <div className="courses__container">
-        <div className="courses__container--buttons"></div>
+        <div className="courses__container--buttons">
+          <div className="flex-row">
+            <Button type="button" variant="quaternary">
+              <span>دوره های آموزشی سلامت جسم</span>
+            </Button>
+            <Button type="button" variant="quaternary">
+              <span>دوره های آموزشی سلامت جسم</span>
+            </Button>
+          </div>
+          <Button type="button" variant="quaternary">
+            <div className="flex flex-center">
+              <AddIcon />
+              <span>مشاهده همه</span>
+            </div>
+          </Button>
+        </div>
 
         <div className="courses__container--cards">
           <ul className="courses__container--cards-list">
@@ -85,6 +109,35 @@ function Courses(): JSX.Element {
               />
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="courses__title">
+        <TitleSecondary
+          title="جدید ترین دوره ها"
+          caption="دوره های آپدیت شده و جدید"
+        ></TitleSecondary>
+      </div>
+
+      <div className="courses__container--cardbuttons">
+        <Button type="button" variant="quaternary">
+          <div className="flex flex-center">
+            <AddIcon />
+            <span>مشاهده همه</span>
+          </div>
+        </Button>
+
+        <div className="flex flex-row">
+          <Button type="button" variant="quaternary">
+            <div className="flex flex-center">
+              <ArrowRightIcon />
+            </div>
+          </Button>
+          <Button type="button" variant="quaternary">
+            <div className="flex flex-center">
+              <ArrowLeftIcon />
+            </div>
+          </Button>
         </div>
       </div>
     </section>
