@@ -17,7 +17,7 @@ import App from "./App.tsx";
 import "./assets/styles/main.scss";
 
 // screens
-import Error from "./screens/Error.tsx";
+import Error from "./pages/Error.tsx";
 import Home from "./screens/Home.tsx";
 
 const router = createBrowserRouter(

@@ -10,6 +10,7 @@ import {
   ArrowBackIos as ArrowLeftIcon,
   ArrowForwardIos as ArrowRightIcon,
 } from "@mui/icons-material";
+import { Card, CardContent, CardMedia } from "@mui/material";
 
 function Courses(): JSX.Element {
   const content = (
@@ -17,7 +18,6 @@ function Courses(): JSX.Element {
       <div className="courses__search">
         <SearchPrimary />
       </div>
-
       <div className="courses__container">
         <div className="courses__container--buttons">
           <div className="flex-row">
@@ -139,6 +139,107 @@ function Courses(): JSX.Element {
             </div>
           </Button>
         </div>
+      </div>
+      <div className="courses__container--cards">
+        <Card sx={{ maxWidth: 345, borderRadius: 3, cursor: "pointer" }}>
+          <CardMedia
+            component="img"
+            alt="new-course-1"
+            height="200"
+            image="./images/new-course-1.png"
+          />
+          <CardContent>
+            <span className="courses__container--cards-title">
+              کتابخانه جامع طب سنتی - اسلامی
+            </span>
+          </CardContent>
+          <CardContent
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <div className="courses__container--cards-caption">
+              <span className="courses__container--cards-price">700,000</span>
+              <span className="courses__container--cards-currency">ریال</span>
+            </div>
+            <Button type="button" variant="primary">
+              <span>خرید دوره</span>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card sx={{ maxWidth: 345, borderRadius: 3, cursor: "pointer" }}>
+          <CardMedia
+            component="img"
+            alt="new-course-1"
+            height="200"
+            image="./images/new-course-2.png"
+          />
+          <CardContent>
+            <span className="courses__container--cards-title">
+              کتابخانه جامع طب سنتی - اسلامی
+            </span>
+          </CardContent>
+          <CardContent
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <div className="courses__container--cards-caption">
+              <span className="courses__container--cards-price">700,000</span>
+              <span className="courses__container--cards-currency">ریال</span>
+            </div>
+            <Button type="button" variant="primary">
+              <span>خرید دوره</span>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card sx={{ maxWidth: 345, borderRadius: 3, cursor: "pointer" }}>
+          <CardMedia
+            component="img"
+            alt="new-course-1"
+            height="200"
+            image="./images/new-course-3.png"
+          />
+          <CardContent>
+            <span className="courses__container--cards-title">
+              کتابخانه جامع طب سنتی - اسلامی
+            </span>
+          </CardContent>
+          <CardContent
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <div className="courses__container--cards-caption">
+              <span className="courses__container--cards-price">700,000</span>
+              <span className="courses__container--cards-currency">ریال</span>
+            </div>
+            <Button type="button" variant="primary">
+              <span>خرید دوره</span>
+            </Button>
+          </CardContent>
+        </Card>
+
+        <Card sx={{ maxWidth: 345, borderRadius: 3, cursor: "pointer" }}>
+          <CardMedia
+            component="img"
+            alt="new-course-1"
+            height="200"
+            image="./images/new-course-4.png"
+          />
+          <CardContent>
+            <span className="courses__container--cards-title">
+              کتابخانه جامع طب سنتی - اسلامی
+            </span>
+          </CardContent>
+          <CardContent
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <div className="courses__container--cards-caption">
+              <span className="courses__container--cards-price">700,000</span>
+              <span className="courses__container--cards-currency">ریال</span>
+            </div>
+            <Button type="button" variant="primary">
+              <span>خرید دوره</span>
+            </Button>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

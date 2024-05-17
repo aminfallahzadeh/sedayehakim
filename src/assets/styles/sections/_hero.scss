@@ -2,10 +2,14 @@
     background-image: url("/images/hero-bg.png");
     background-size: cover;
     background-position: center;
-    height: 50rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 40rem;
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     &__title {
         position: relative;

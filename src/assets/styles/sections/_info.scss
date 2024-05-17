@@ -1,0 +1,15 @@
+.info {
+    background-image: url("/images/info-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 70rem;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
