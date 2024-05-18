@@ -8,11 +8,11 @@ interface IconCardProps {
 
 const IconCard: React.FC<IconCardProps> = ({ title, icon, link }) => {
   const content = (
-    <a href={link} className="card">
-      <div className="card__icon">
-        <img src={icon} alt={title} className="card__icon--img" />
+    <a href={link} className="IconCard">
+      <div className="IconCard__icon">
+        <img src={icon} alt={title} className="IconCard__icon--img" />
       </div>
-      <span className="card__title">{title}</span>
+      <span className="IconCard__title">{title}</span>
     </a>
   );
 

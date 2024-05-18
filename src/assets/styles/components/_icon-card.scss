@@ -1,4 +1,4 @@
-.card {
+.IconCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +31,11 @@
     }
 
     &:hover {
-        .card__title {
+        .IconCard__title {
             color: var(--color-accent-1);
         }
 
-        .card__icon {
+        .IconCard__icon {
             transform: translateY(-0.5rem);
             -webkit-box-shadow: 0px 4px 25px -4px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 0px 4px 25px -4px rgba(0, 0, 0, 0.75);
