@@ -1,0 +1,26 @@
+.advice {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 18%, rgba(255, 246, 215, 1) 100%);
+    padding: 5rem 25rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+    }
+
+    &__cover {
+        position: relative;
+
+        &--dr {
+            width: 35rem;
+        }
+
+        &--bg {
+            width: 25rem;
+            height: 50rem;
+            position: absolute;
+            left: 20rem;
+        }
+    }
+}
