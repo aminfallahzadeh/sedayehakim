@@ -1,5 +1,4 @@
 // components
-import TitleSecondary from "../components/TitleSecondary";
 import Button from "../components/Button";
 
 function Info() {
@@ -7,7 +6,16 @@ function Info() {
     <section className="info">
       <div className="info__container">
         <div className="info__caption">
-          <TitleSecondary title="با صدای حکیم" caption="بیشتر آشنا شوید" />
+          <div className="info__title">
+            <div className="title-primary">
+              <h3 className="title-primary__heding">
+                با <span className="title-primary__accent">صدای حکیم</span>
+              </h3>
+
+              <span className="title-primary__caption">بیشتر آشنا شوید</span>
+            </div>
+          </div>
+
           <p className="info__caption--desc">
             موسسه پژوهشی و آموزشی صدای حکیم با هدف ارتقا سطح علمی و ترویج دانش
             طب سنتی با بهره گیری از برترین اساتید اقدام به برگزاری دوره های ویژه
@@ -21,7 +29,7 @@ function Info() {
         </div>
 
         <div className="info__video">
-          <video autoPlay muted loop controls>
+          <video autoPlay muted loop>
             <source src="./video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

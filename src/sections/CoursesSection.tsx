@@ -13,9 +13,9 @@ function CoursesSection() {
   const content = (
     <section className="courses">
       <div className="courses__title">
-        <div className="title-secondary">
-          <h3 className="heading-secondary">جدیدترین دوره ها</h3>
-          <span className="title-secondary__caption">
+        <div className="title-tertiary">
+          <h3 className="title-tertiary__heding">جدیدترین دوره ها</h3>
+          <span className="title-tertiary__caption">
             دوره های آپدیت شده و جدید
           </span>
         </div>

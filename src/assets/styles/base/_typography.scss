@@ -27,18 +27,57 @@ html {
     color: var(--color-txt-primary);
 }
 
-.title-secondary {
+.title-primary {
+    position: relative;
+    line-height: 5rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: -2rem;
+        width: 0.5rem;
+        border-radius: 2rem;
+        height: 100%;
+        background-color: var(--color-accent-1);
+    }
+
+    &__heding {
+        font-size: 4rem;
+        font-weight: 300;
+        color: var(--color-txt-primary);
+    }
+
+    &__accent {
+        font-size: 4rem;
+        font-weight: 300;
+        color: var(--color-accent-2);
+    }
+
+    &__caption {
+        font-size: 3rem;
+        font-weight: 300;
+        color: var(--color-txt-perimary);
+    }
+}
+
+.title-tertiary {
     position: relative;
     line-height: 3.2rem;
 
     &::before {
         content: "";
         position: absolute;
-        right: -1rem;
+        right: -2rem;
         width: 0.5rem;
         border-radius: 2rem;
         height: 100%;
         background-color: var(--color-accent-1);
+    }
+
+    &__heding {
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--color-txt-primary);
     }
 
     &__caption {
