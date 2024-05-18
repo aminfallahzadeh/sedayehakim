@@ -75,6 +75,16 @@
         }
     }
 
+    &-quinary {
+        color: var(--color-white);
+        background-color: var(--color-txt-primary);
+        border: none;
+        -webkit-box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.75);
+        padding: 0.5rem 3rem !important;
+    }
+
     &:focus {
         outline: none;
     }

@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 interface ButtonProps {
   children: ReactNode;
   type: "submit" | "reset" | "button" | undefined;
-  variant: "primary" | "secondary" | "tertiary" | "quaternary";
+  variant: "primary" | "secondary" | "tertiary" | "quaternary" | "quinary";
 }
 
 const Button: React.FC<ButtonProps> = ({ children, type, variant }) => {

@@ -2,14 +2,79 @@
     background-image: url("/images/info-bg.png");
     background-size: cover;
     background-position: center;
-    height: 70rem;
-    padding: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 60rem;
+    padding: 10rem 35rem;
 
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
     }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+
+        &--desc {
+            font-size: 1.7rem;
+            color: var(--color-txt-primary);
+            text-align: justify;
+            width: 35ch;
+        }
+    }
+
+    &__video {
+        width: 50rem;
+        height: 35rem;
+        position: relative;
+        z-index: 500;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 92%;
+            height: 100%;
+            border-radius: 1.2rem;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-accent-1);
+            z-index: 499;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 87%;
+            height: 100%;
+            border-radius: 1.2rem;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-accent-3);
+            z-index: 498;
+        }
+
+        video {
+            border-radius: 1.2rem;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 500;
+        }
+    }
+}
+
+.video_overlay {
+    position: absolute;
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 501;
 }

@@ -1,5 +1,6 @@
 // components
 import TitleSecondary from "../components/TitleSecondary";
+import Button from "../components/Button";
 
 function Info() {
   return (
@@ -12,10 +13,19 @@ function Info() {
             طب سنتی با بهره گیری از برترین اساتید اقدام به برگزاری دوره های ویژه
             مینماید
           </p>
+          <div>
+            <Button type="button" variant="quinary">
+              <span>بیشتر بخوانید</span>
+            </Button>
+          </div>
         </div>
 
         <div className="info__video">
-          <h1>VIDEO</h1>
+          <video autoPlay muted loop controls>
+            <source src="./video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="video_overlay"></div>
         </div>
       </div>
     </section>
