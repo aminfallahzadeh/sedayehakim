@@ -1,0 +1,10 @@
+.colleagues {
+    padding-top: 10rem;
+
+    &__cards {
+        padding: 10rem 25rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+    }
+}

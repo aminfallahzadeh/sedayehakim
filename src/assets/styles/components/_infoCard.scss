@@ -1,0 +1,21 @@
+.infoCard {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-txt-tertiary);
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.8rem;
+    align-items: center;
+    padding: 2rem 0;
+
+    &__img {
+        width: 10rem;
+    }
+
+    &__caption {
+        color: var(--color-txt-parimary);
+        font-size: 1.8rem;
+        font-weight: 100;
+    }
+}

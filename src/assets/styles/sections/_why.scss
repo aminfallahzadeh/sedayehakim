@@ -1,0 +1,30 @@
+.why {
+    background-image: url("/images/info-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 70rem;
+    padding: 10rem 35rem;
+
+    &__heading {
+        &--desc {
+            font-size: 1.7rem;
+            color: var(--color-text-tertiary);
+            font-weight: 200;
+            text-align: center;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        margin-top: 10rem;
+    }
+
+    &__button {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

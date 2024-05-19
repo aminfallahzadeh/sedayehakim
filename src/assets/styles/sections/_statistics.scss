@@ -1,0 +1,28 @@
+.statistics {
+    background-color: var(--color-txt-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 25rem;
+    column-gap: 40rem;
+
+    &__item {
+        text-align: center;
+
+        &-number {
+            color: var(--color-white);
+            font-size: 3rem;
+            font-weight: 100;
+
+            span {
+                color: var(--color-accent-1);
+            }
+        }
+
+        &-caption {
+            font-size: 1.8rem;
+            font-weight: 100;
+            color: var(--color-white);
+        }
+    }
+}
