@@ -1,10 +1,30 @@
 .statistics {
-    background-color: var(--color-txt-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 25rem;
-    column-gap: 40rem;
+    position: relative;
+
+    &__container {
+        width: 100%;
+        background-color: var(--color-txt-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 25rem;
+        column-gap: 40rem;
+        position: relative;
+        z-index: 1000;
+    }
+
+    &__square {
+        width: 95%;
+        background-color: var(--color-bg-primary);
+        height: 25rem;
+        border-radius: 2rem;
+        position: absolute;
+        bottom: -18rem;
+        transform: rotate(-1.3deg);
+    }
 
     &__item {
         text-align: center;

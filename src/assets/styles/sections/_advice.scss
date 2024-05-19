@@ -9,6 +9,12 @@
         gap: 10rem;
     }
 
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
     &__cover {
         position: relative;
 

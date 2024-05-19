@@ -10,7 +10,6 @@ import WhySection from "../sections/WhySection";
 import FreeCoursesSection from "../sections/FreeCoursesSection";
 import StatisticsSection from "../sections/StatisticsSection";
 import ColleagueSection from "../sections/ColleagueSection";
-import ContactSection from "../sections/ContactSection";
 
 export default function App(): JSX.Element {
   const content: JSX.Element = (
@@ -26,7 +25,6 @@ export default function App(): JSX.Element {
       <FreeCoursesSection />
       <StatisticsSection />
       <ColleagueSection />
-      <ContactSection />
     </>
   );
 
