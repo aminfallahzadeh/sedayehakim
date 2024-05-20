@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     height: 70rem;
-    padding: 10rem 35rem;
+    padding: 10rem 25rem;
 
     &__heading {
         &--desc {
@@ -15,10 +15,15 @@
     }
 
     &__cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
+        width: 100%;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 5rem;
         margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5rem;
     }
 
     &__button {

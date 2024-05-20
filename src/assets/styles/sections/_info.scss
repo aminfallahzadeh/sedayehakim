@@ -5,10 +5,18 @@
     height: 55rem;
     padding: 10rem 35rem;
 
+    @include responsive(big-desk) {
+        padding: 10rem 20rem;
+    }
+
+    @include responsive(mid-desk) {
+        padding: 10rem 15rem;
+    }
+
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10rem;
+        gap: 20rem;
     }
 
     &__caption {
@@ -29,6 +37,11 @@
         height: 35rem;
         position: relative;
         z-index: 500;
+
+        @include responsive(mid-desk) {
+            width: 45rem;
+            height: 30rem;
+        }
 
         &::before {
             content: "";

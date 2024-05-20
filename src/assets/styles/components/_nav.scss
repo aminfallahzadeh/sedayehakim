@@ -1,7 +1,15 @@
 .nav {
     width: 100%;
     background-color: var(--color-white);
-    padding: 3rem 20rem;
+    padding: 3rem 15rem;
+
+    @include responsive(big-desk) {
+        padding: 3rem 8rem;
+    }
+
+    @include responsive(mid-desk) {
+        padding: 3rem 3rem;
+    }
 
     &::after {
         content: "";
@@ -17,6 +25,10 @@
     &__logo {
         &--img {
             width: 14rem;
+
+            @include responsive(mid-desk) {
+                width: 10rem;
+            }
         }
     }
 
@@ -30,6 +42,10 @@
                 list-style: none;
                 display: flex;
                 column-gap: 5rem;
+
+                @include responsive(mid-desk) {
+                    column-gap: 4.5rem;
+                }
             }
 
             &-item {
@@ -37,6 +53,14 @@
                 cursor: pointer;
                 font-weight: 200;
                 position: relative;
+
+                @include responsive(big-desk) {
+                    font-size: 1.8rem;
+                }
+
+                @include responsive(mid-desk) {
+                    font-size: 1.6rem;
+                }
 
                 &:after {
                     content: "";

@@ -89,11 +89,16 @@
 
     &__address {
         width: 100%;
-        padding: 5rem 45rem;
+        padding: 5rem 25rem;
         background-color: var(--color-bg-primary);
         display: flex;
-        column-gap: 2rem;
-        justify-content: space-between;
+        column-gap: 20rem;
+        justify-content: center;
+
+        @include responsive(big-desk) {
+            column-gap: 15rem;
+            padding: 5rem 15rem;
+        }
 
         &--title {
             font-size: 2rem;
