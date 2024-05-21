@@ -3,6 +3,14 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 18%, rgba(255, 246, 215, 1) 100%);
     padding: 5rem 25rem;
 
+    @include responsive(big-desk) {
+        padding: 5rem 20rem;
+    }
+
+    @include responsive(mid-desk) {
+        padding: 5rem 15rem;
+    }
+
     &__swiper {
         width: 50rem;
         height: max-content;
@@ -11,7 +19,11 @@
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10rem;
+        gap: 25rem;
+
+        @include responsive(mid-desk) {
+            gap: 15rem;
+        }
     }
 
     &__caption {
@@ -25,13 +37,30 @@
 
         &--dr {
             width: 35rem;
+            position: absolute;
+            z-index: 500;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @include responsive(mid-desk) {
+                width: 30rem;
+            }
         }
 
         &--bg {
             width: 25rem;
             height: 50rem;
             position: absolute;
-            left: 20rem;
+            left: 0;
+            bottom: 1rem;
+            z-index: 400;
+
+            @include responsive(mid-desk) {
+                left: -3rem;
+                width: 20rem;
+                height: 50rem;
+            }
         }
     }
 }

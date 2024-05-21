@@ -1,7 +1,7 @@
 // components
 import Hero from "../sections/Hero";
 import SearchSection from "../sections/SearchSection";
-import CoursesSection from "../sections/CoursesSection";
+import NewCoursesSection from "../sections/NewCoursesSection";
 import Info from "../sections/Info";
 import BestCoursesSection from "../sections/BestCoursesSection";
 import AdviceSection from "../sections/AdviceSection";
@@ -16,7 +16,7 @@ export default function App(): JSX.Element {
     <>
       <Hero />
       <SearchSection />
-      <CoursesSection />
+      <NewCoursesSection />
       <Info />
       <BestCoursesSection />
       <AdviceSection />

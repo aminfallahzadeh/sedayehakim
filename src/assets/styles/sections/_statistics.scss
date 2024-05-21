@@ -8,10 +8,9 @@
         width: 100%;
         background-color: var(--color-txt-primary);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 4rem 25rem;
-        column-gap: 40rem;
         position: relative;
         z-index: 1000;
     }

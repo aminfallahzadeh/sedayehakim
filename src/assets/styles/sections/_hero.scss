@@ -7,9 +7,6 @@
     align-items: center;
     height: 65rem;
 
-    &__container {
-    }
-
     &__title {
         position: relative;
 
@@ -18,7 +15,7 @@
             position: absolute;
             transform: translateY(-50%);
             top: 50%;
-            left: 11rem;
+            left: 12rem;
             z-index: 1;
         }
 

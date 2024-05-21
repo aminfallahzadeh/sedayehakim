@@ -9,37 +9,39 @@ import {
 } from "@mui/icons-material";
 import { Card, CardContent, CardMedia } from "@mui/material";
 
-function CoursesSection() {
+function NewCoursesSection() {
   const content = (
     <section className="courses">
-      <div className="courses__title">
-        <div className="title-tertiary">
-          <h3 className="title-tertiary__heding">جدیدترین دوره ها</h3>
-          <span className="title-tertiary__caption">
-            دوره های آپدیت شده و جدید
-          </span>
-        </div>
-      </div>
-
-      <div className="courses__buttons">
-        <Button type="button" variant="quaternary">
-          <div className="flex flex-center">
-            <AddIcon />
-            <span>مشاهده همه</span>
+      <div className="courses__header">
+        <div className="courses__title">
+          <div className="title-tertiary">
+            <h3 className="title-tertiary__heding">جدیدترین دوره ها</h3>
+            <span className="title-tertiary__caption">
+              دوره های آپدیت شده و جدید
+            </span>
           </div>
-        </Button>
+        </div>
 
-        <div className="flex flex-row">
+        <div className="courses__buttons">
           <Button type="button" variant="quaternary">
             <div className="flex flex-center">
-              <ArrowRightIcon />
+              <AddIcon />
+              <span>مشاهده همه</span>
             </div>
           </Button>
-          <Button type="button" variant="quaternary">
-            <div className="flex flex-center">
-              <ArrowLeftIcon />
-            </div>
-          </Button>
+
+          <div className="flex flex-row">
+            <Button type="button" variant="quaternary">
+              <div className="flex flex-center">
+                <ArrowRightIcon />
+              </div>
+            </Button>
+            <Button type="button" variant="quaternary">
+              <div className="flex flex-center">
+                <ArrowLeftIcon />
+              </div>
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -151,4 +153,4 @@ function CoursesSection() {
   return content;
 }
 
-export default CoursesSection;
+export default NewCoursesSection;

@@ -37,7 +37,8 @@ function Footer() {
           <div>
             <p> تهران ستارخان نبش نیایش - پلاک ۳۲۱ واحد ۵ </p>
             <p>
-              شماره تماس: <span>021-11111111</span>
+              شماره تماس: <br />
+              <span>021-11111111</span>
             </p>
           </div>
         </div>
@@ -96,7 +97,7 @@ function Footer() {
       </div>
       <div className="footer__license flex-row flex-center">
         <div className="footer__lines"></div>
-        <p className="footer__text">
+        <p className="footer__license--text">
           کلیه حقوق مادی و معنوی این سایت متعلق به اندیشکده سبک زندگی و خانواده
           صدای حکیم میباشد.
         </p>

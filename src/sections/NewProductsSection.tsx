@@ -11,35 +11,37 @@ import { Card, CardContent, CardMedia } from "@mui/material";
 
 function NewProductsSection() {
   const content = (
-    <section className="courses u-padding-top-md">
-      <div className="courses__title">
-        <div className="title-tertiary">
-          <h3 className="title-tertiary__heding">جدیدترین محصولات</h3>
-          <span className="title-tertiary__caption">
-            آخرین محصولات صدای حکیم
-          </span>
-        </div>
-      </div>
-
-      <div className="courses__buttons">
-        <Button type="button" variant="quaternary">
-          <div className="flex flex-center">
-            <AddIcon />
-            <span>مشاهده بیشتر</span>
+    <section className="courses">
+      <div className="courses__header">
+        <div className="courses__title">
+          <div className="title-tertiary">
+            <h3 className="title-tertiary__heding">جدیدترین محصولات</h3>
+            <span className="title-tertiary__caption">
+              آخرین محصولات صدای حکیم
+            </span>
           </div>
-        </Button>
+        </div>
 
-        <div className="flex flex-row">
+        <div className="courses__buttons">
           <Button type="button" variant="quaternary">
             <div className="flex flex-center">
-              <ArrowRightIcon />
+              <AddIcon />
+              <span>مشاهده بیشتر</span>
             </div>
           </Button>
-          <Button type="button" variant="quaternary">
-            <div className="flex flex-center">
-              <ArrowLeftIcon />
-            </div>
-          </Button>
+
+          <div className="flex flex-row">
+            <Button type="button" variant="quaternary">
+              <div className="flex flex-center">
+                <ArrowRightIcon />
+              </div>
+            </Button>
+            <Button type="button" variant="quaternary">
+              <div className="flex flex-center">
+                <ArrowLeftIcon />
+              </div>
+            </Button>
+          </div>
         </div>
       </div>
 
