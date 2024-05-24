@@ -18,6 +18,10 @@
         @include responsive(mid-desk) {
             padding: 0 25rem;
         }
+
+        @include responsive(tab-land) {
+            padding: 0 15rem;
+        }
     }
 
     &__buttons {
@@ -30,16 +34,39 @@
 
     &__iconCards {
         margin-top: 10rem;
+        padding: 0 25rem;
         text-align: center;
+
+        @include responsive(big-desk) {
+            padding: 0 20rem;
+        }
+
+        @include responsive(mid-desk) {
+            padding: 0 15rem;
+        }
+
+        @include responsive(tab-land) {
+            padding: 0 5rem;
+        }
 
         &--list {
             list-style: none;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 3rem;
+            row-gap: 3rem;
 
             @include responsive(mid-desk) {
                 gap: 1.5rem;
+            }
+
+            @include responsive(tab-land) {
+            }
+
+            li {
+                flex: 0 0 10rem;
             }
         }
     }

@@ -1,8 +1,8 @@
 .info {
     background-image: url("/images/info-bg.png");
     background-size: cover;
-    background-position: center;
-    height: 55rem;
+    background-position: contain;
+    // height: 55rem;
     padding: 10rem 35rem;
 
     @include responsive(big-desk) {
@@ -13,10 +13,18 @@
         padding: 10rem 15rem;
     }
 
+    @include responsive(tab-land) {
+        padding: 10rem 5rem;
+    }
+
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20rem;
+
+        @include responsive(tab-land) {
+            gap: 0;
+        }
     }
 
     &__caption {
@@ -37,10 +45,16 @@
         height: 35rem;
         position: relative;
         z-index: 500;
+        margin: auto;
 
         @include responsive(mid-desk) {
             width: 45rem;
             height: 30rem;
+        }
+
+        @include responsive(tab-land) {
+            width: 35rem;
+            height: 20rem;
         }
 
         &::before {

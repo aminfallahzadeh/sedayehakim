@@ -36,6 +36,13 @@ $breakpoint argument choices:
         }
     }
 
+    @if $breakpoint==tab-port-min {
+        // 900px
+        @media (min-width: 56.25em) {
+            @content;
+        }
+    }
+
     @if $breakpoint==tab-land {
         // 1200px
         @media (max-width: 75em) {
