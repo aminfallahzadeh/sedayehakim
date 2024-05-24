@@ -1,4 +1,22 @@
+// react imports
+import { useEffect } from "react";
+
+// redux imports
+import { useTestApiQuery } from "../slices/testApiSlice";
+
 function Hero(): JSX.Element {
+  const { data: data, isLoading, isSuccess } = useTestApiQuery({});
+
+  useEffect(() => {
+    if (isLoading) {
+      console.log("Loading ...");
+    }
+
+    if (isSuccess) {
+      console.log(data);
+    }
+  }, [data, isLoading, isSuccess]);
+
   const content: JSX.Element = (
     <section className="hero">
       <div className="hero__container">
