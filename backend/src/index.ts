@@ -1,8 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import sql from "mssql";
-import { config } from "../dbFiles/dbConfig";
+import { poolPromise } from "../dbFiles/dbConfig";
 
 dotenv.config();
 
@@ -14,9 +13,8 @@ app.use(cors());
 
 app.get("/api", async (req: Request, res: Response) => {
   try {
-    await sql.connect(config);
-    const result = await sql.query`SELECT * FROM shop.Product`;
-
+    const pool = await poolPromise;
+    const result = await pool.request().query("SELECT * FROM shop.Product");
     res.json(result.recordset);
   } catch (err) {
     if (err instanceof Error) {
